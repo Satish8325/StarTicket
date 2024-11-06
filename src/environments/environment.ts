@@ -10,7 +10,9 @@ export const environment = {
 
 
   login: url + '/api/Identity/authenticate',
-
+  refreshToken: url + '/api/Identity/refreshToken',
+  getOperatorsByUserId: url + '/api/User/operators',
+  getOperatorsConfigDataByUserId: url + '/api/User/OperatorsConfigData',
 
   firebaseConfig: {
     apiKey: '',
@@ -22,6 +24,16 @@ export const environment = {
     appId: '',
     measurementId: ''
   }
+  // firebaseConfig: {
+  //   apiKey: '',
+  //   authDomain: '',
+  //   databaseURL: '',
+  //   projectId: '',
+  //   storageBucket: '',
+  //   messagingSenderId: '',
+  //   appId: '',
+  //   measurementId: ''
+  // }
 };
 
 
