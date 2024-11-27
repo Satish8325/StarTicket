@@ -45,6 +45,7 @@ export class LoginComponent {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const phonePattern = /^\+?[1-9]\d{1,14}$/;
     if (this.Email == "" || this.Email == null || this.Email == undefined) {
+      this.toastralert.toastrwarnning('Please Enter Email ');
       this.loginbtn = 'Log In';
       this.diablelogin = false;
       this.btnClick = true;
